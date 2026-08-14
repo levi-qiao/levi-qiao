@@ -7,8 +7,11 @@
   </p>
 
   <p>
-    <a href="https://github.com/levi-qiao?tab=repositories">
-      <img src="https://img.shields.io/badge/Explore-Projects-6C63FF?style=flat-square&logo=github&logoColor=white" alt="Explore projects" />
+    <a href="https://www.x-nan.com">
+      <img src="https://img.shields.io/badge/Site-x--nan.com-6C63FF?style=flat-square" alt="x-nan.com" />
+    </a>
+    <a href="https://github.com/levi-qiao/longgraph-skill">
+      <img src="https://img.shields.io/github/stars/levi-qiao/longgraph-skill?style=flat-square&logo=github&label=longgraph-skill" alt="longgraph-skill stars" />
     </a>
     <a href="https://x.com/guannanjiayou">
       <img src="https://img.shields.io/badge/Follow-@guannanjiayou-111827?style=flat-square&logo=x&logoColor=white" alt="Follow @guannanjiayou on X" />
@@ -19,25 +22,38 @@
 ## What I build
 
 I work where AI prototypes become dependable systems: agent architecture,
-evaluation, orchestration, and the engineering controls that make autonomous
-work observable and verifiable.
+evaluation, orchestration, and the controls that make long-running autonomous
+work inspectable and verifiable.
 
-我专注于企业级 AI 应用与智能体工程，让原型真正具备可评估、可追踪、可交付的生产能力。
+我做可评估、可追踪、可交付的智能体工程，重点是长任务里的 context death 和验收收敛。
+
+## Featured
+
+[**longgraph-skill**](https://github.com/levi-qiao/longgraph-skill) — long-horizon agent skill for Claude Code, Cursor, Codex, and Grok Build. Clean-context supervisor, multi-task ledger loop, verified gates. A markdown library (loop-graph), not a framework.
 
 ## Selected work
 
+| Project | What it does |
+| --- | --- |
+| [**longgraph-skill**](https://github.com/levi-qiao/longgraph-skill) | Long-horizon agents: clean-context roles, durable state, `/loop-converge` for code-convergence. |
+| [**skillmill**](https://github.com/levi-qiao/skillmill) | Docs site, PDF, or tutorial → installable agent skill (`npx skillmill`). |
+| [**session-skill**](https://github.com/levi-qiao/session-skill) | Successful agent session (chat + tool traces) → installable `SKILL.md` for Cursor / Claude Code. |
+| [**agent-ding**](https://github.com/levi-qiao/agent-ding) | Notify when a coding agent finishes — modular hooks, Zellij, shell helpers. |
+| [**dsh-plugin-longgraph**](https://github.com/levi-qiao/dsh-plugin-longgraph) | DeepSeek Harness plugin: longgraph / loop-graph / loop-converge authoring skills. |
+
+## Also
+
 | Project | What it explores |
 | --- | --- |
-| [**octopus-skill**](https://github.com/levi-qiao/octopus-skill) 🐙 | Graph engineering for long-horizon agents: clean-context roles, durable state, and verified completion across Claude Code, Grok, Cursor, and Codex. |
-| [**obsidian-llm-wiki**](https://github.com/levi-qiao/obsidian-llm-wiki) | A maintainable knowledge system inspired by the LLM Wiki model, with namespace architecture, layered indexes, and reusable agent skills. |
-| [**sherlock-claude**](https://github.com/levi-qiao/sherlock-claude) | AI-assisted code analysis that turns repositories and runtime logs into focused diagnoses and actionable fix recommendations. |
+| [**obsidian-llm-wiki**](https://github.com/levi-qiao/obsidian-llm-wiki) | Maintainable knowledge system: namespaces, layered indexes, reusable agent skills. |
+| [**sherlock-claude**](https://github.com/levi-qiao/sherlock-claude) | Repo + runtime logs → focused diagnoses and fix recommendations. |
 
 ## Current focus
 
-- **Agent systems** — specialized roles, durable coordination, and bounded autonomy
-- **Evaluation & reliability** — evidence-based acceptance, regression gates, and failure analysis
-- **Developer experience** — tools that make advanced AI workflows easier to operate and inspect
-- **Knowledge engineering** — structured context that stays useful as teams and codebases evolve
+- **Long-horizon agents** — survive context death, keep state durable, make “done” checkable
+- **Loop converge** — bind each loop to a real acceptance gate, not empty code churn
+- **Skill tooling** — turn docs and good sessions into installable skills
+- **Evaluation & reliability** — evidence-based acceptance and failure analysis
 
 ## Engineering principles
 
