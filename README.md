@@ -7,7 +7,7 @@
   </p>
 
   <p>
-    <a href="https://www.x-nan.com">
+    <a href="https://x-nan.com">
       <img src="https://img.shields.io/badge/Site-x--nan.com-6C63FF?style=flat-square" alt="x-nan.com" />
     </a>
     <a href="https://github.com/levi-qiao/longgraph-skill">
@@ -28,7 +28,7 @@ I work where AI prototypes become dependable systems: agent architecture,
 evaluation, orchestration, and the controls that make long-running autonomous
 work inspectable and verifiable.
 
-我做可评估、可追踪、可交付的智能体工程，重点是长任务里的 context death 和验收收敛。
+我做可评估、可追踪、可交付的智能体工程，重点是长任务里的 context death 和验收收敛。技术文章与实践记录在 [x-nan.com](https://x-nan.com)。
 
 ## Featured
 
@@ -64,5 +64,5 @@ work inspectable and verifiable.
 > than the problem it solves.
 
 <div align="center">
-  <sub>Python · Rust · FastAPI · LLM agents · Evaluation · Automation · Developer tooling</sub>
+  <sub><a href="https://x-nan.com">x-nan.com</a> · Python · Rust · FastAPI · LLM agents · Evaluation · Automation · Developer tooling</sub>
 </div>
