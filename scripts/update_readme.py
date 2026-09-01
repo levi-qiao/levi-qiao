@@ -28,16 +28,6 @@ EXCLUDED_REPOS = {
     "octopus",
 }
 
-# Optional custom display emojis for key projects
-REPO_EMOJIS = {
-    "longgraph-skill": "🐙",
-    "herdr-agent-quota": "⚡",
-    "obsidian-llm-wiki": "🧠",
-    "sherlock-claude": "🔍",
-    "dsh-plugin-longgraph": "🧩",
-    "agent-ding": "🔔",
-}
-
 START_TAG = "<!-- REPOS_START -->"
 END_TAG = "<!-- REPOS_END -->"
 README_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "README.md")
@@ -89,12 +79,9 @@ def generate_markdown_table(repos):
         # Clean up whitespace and pipe characters
         desc = re.sub(r"\s+", " ", desc).replace("|", "\\|")
         stars = r.get("stargazers_count", 0)
-        emoji = REPO_EMOJIS.get(name, "")
-        emoji_str = f" {emoji}" if emoji else ""
+        star_str = str(stars) if stars > 0 else "-"
 
-        star_str = f"⭐ {stars}" if stars > 0 else "-"
-
-        lines.append(f"| [**{name}**]({url}){emoji_str} | {desc} | {star_str} |")
+        lines.append(f"| [**{name}**]({url}) | {desc} | {star_str} |")
 
     return "\n".join(lines)
 
@@ -117,7 +104,6 @@ def update_readme(table_md):
     if pattern.search(content):
         new_content = pattern.sub(replacement, content)
     else:
-        # If tags not found, find '## Selected work' and replace the old table
         old_section_pattern = re.compile(r"## Selected work\s*\n\s*\|[\s\S]*?(?=\n## |\Z)")
         if old_section_pattern.search(content):
             new_content = old_section_pattern.sub(f"## Selected work\n\n{replacement}\n", content)
