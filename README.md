@@ -42,7 +42,7 @@ work inspectable and verifiable.
 | Project | Description | Stars |
 | :--- | :--- | :---: |
 | [**longgraph-skill**](https://github.com/levi-qiao/longgraph-skill) | Long-horizon agent skill for Claude Code / Cursor / Codex / Grok Build — multi-task ledger loop, host-portable, clean-context supervisor, verified gates. Markdown library (loop-graph), not a framework. | 67 |
-| [**herdr-agent-quota**](https://github.com/levi-qiao/herdr-agent-quota) | Credential-scoped AI quota, context, and cache in Herdr for Claude, Codex, Grok, Agy, OpenCode, Pi, and OMP. | 45 |
+| [**herdr-agent-quota**](https://github.com/levi-qiao/herdr-agent-quota) | Credential-scoped AI quota, context, and cache in Herdr for Claude, Codex, Grok, Agy, OpenCode, Pi, and OMP. | 48 |
 | [**obsidian-llm-wiki**](https://github.com/levi-qiao/obsidian-llm-wiki) | Compile notes into a linked Obsidian wiki at ingest time with Claude Code, following Karpathy's LLM Wiki idea instead of RAG-at-query. | 10 |
 | [**sherlock-claude**](https://github.com/levi-qiao/sherlock-claude) | An AI-powered code analysis platform built on [Claude Agent SDK](https://github.com/anthropics/claude-code). It automatically analyzes codebases, diagnoses errors from logs, and generates targeted fix recommendations — all driven by YAML-configured agents and a reusable plugin skill system. | 6 |
 | [**dsh-plugin-longgraph**](https://github.com/levi-qiao/dsh-plugin-longgraph) | DeepSeek Harness community plugin: longgraph / loop-graph / loop-converge authoring skills on ctx.skills | 5 |
